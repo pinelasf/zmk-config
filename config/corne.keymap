@@ -41,10 +41,10 @@
 // |     |     |     |     |     |   |     | LFT | DWN | RGT |     |
 //             | GUI |     | SPC |   | ENT |     | CTRL |
                         bindings = <
-   &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0
+   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
    &none &none &none &none &none   &none &none &kp UP &none &none
    &none &none &none &none &none   &none &kp LEFT &kp DOWN &kp RIGHT &none
-                                &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp LCTRL
+        &kp LGUI &trans &kp SPACE   &kp RET &trans &kp LCTRL
                         >;
                 };
 
@@ -56,9 +56,9 @@
 //             | GUI |     | SPC |   | ENT |     | CTRL |
                         bindings = <
    &kp PT_HASH &kp PT_EXCL &kp PT_DQT &kp PT_AMPS &kp PT_LPAR   &kp PT_RPAR &kp PT_PIPE  &kp PT_APOS &kp PT_QMARK &kp PT_PRCNT
-   &kp PT_TILDE   &kp PT_CARET &kp PT_ACUTE   &kp PT_LT   &kp PT_LBRC      &kp PT_RBRC &kp PT_GT &kp PT_GRAVE  &kp PT_EQUAL &kp PT_EURO
-   &kp PT_ASTRK   &kp PT_PLUS &kp PT_MINUS   &kp PT_FSLH   &kp PT_LBKT      &kp PT_RBKT &kp PT_BSLH  &kp PT_UNDER  &kp PT_AT &kp PT_DLLR
-                &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp LCTRL
+   &kp PT_TILDE &kp PT_CARET &kp PT_ACUTE &kp PT_LT &kp PT_LBRC   &kp PT_RBRC &kp PT_GT &kp PT_GRAVE &kp PT_EQUAL &kp PT_EURO
+   &kp PT_ASTRK &kp PT_PLUS &kp PT_MINUS &kp PT_FSLH &kp PT_LBKT   &kp PT_RBKT &kp PT_BSLH &kp PT_UNDER &kp PT_AT &kp PT_DLLR
+        &kp LGUI &trans &kp SPACE   &kp RET &trans &kp LCTRL
                         >;
                 };
         };
