@@ -8,7 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <locale/keys_pt.h>
-#include <locale/keys_pt_osx.h>
+#include "keys_pt_osx.h"
 
 &mt {
     tapping-term-ms = <200>;
