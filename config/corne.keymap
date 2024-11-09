@@ -39,11 +39,11 @@
 // -------------------------------   -------------------------------
 // |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |
 // | BT1 | BT2 | BT3 | BT4 | BT5 |   |     |     |  UP |     |     |
-// |     |     |     |     |     |   |     | LFT | DWN | RGT |     |
+// |     |     |     |SHIFT|     |   |     | LFT | DWN | RGT |     |
 //             | GUI |     | SPC |   | ENT |     | CTRL |
                         bindings = <
    &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-   &none &none &none &none &none   &none &none &kp UP &none &none
+   &none &none &none &kp LSHFT &none   &none &none &kp UP &none &none
    &none &none &none &none &none   &none &kp LEFT &kp DOWN &kp RIGHT &none
         &kp LGUI &trans &kp SPACE   &kp RET &trans &kp LCTRL
                         >;
