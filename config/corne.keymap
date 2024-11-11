@@ -18,6 +18,14 @@
         chosen {
                 zmk,physical-layout = &foostan_corne_5col_layout;
         };
+
+        conditional_layers {
+                compatible = "zmk,conditional-layers";
+                tri_layer {
+                        if-layers = <1 2>;
+                        then-layer = <3>;
+                };
+        };
         
         keymap {
                 compatible = "zmk,keymap";
@@ -59,6 +67,20 @@
    &kp PT_OSX_HASH &kp PT_OSX_EXCL &kp PT_OSX_DQT &kp PT_OSX_AMPS &kp PT_OSX_LPAR   &kp PT_OSX_RPAR &kp PT_OSX_PIPE &kp PT_OSX_APOS &kp PT_OSX_QMARK &kp PT_OSX_PRCNT
    &kp PT_OSX_TILDE &kp PT_OSX_CARET &kp PT_OSX_ACUTE &kp PT_OSX_LT &kp PT_OSX_LBRC   &kp PT_OSX_RBRC &kp PT_OSX_GT &kp PT_OSX_GRAVE &kp PT_OSX_EQUAL &kp PT_OSX_EURO
    &kp PT_OSX_STAR &kp PT_OSX_PLUS &kp PT_OSX_MINUS &kp PT_OSX_FSLH &kp PT_OSX_LBKT   &kp PT_OSX_RBKT &kp PT_OSX_BSLH &kp PT_OSX_UNDER &kp PT_OSX_AT &kp PT_OSX_DLLR
+        &kp LGUI &trans &kp SPACE   &kp RET &trans &kp LCTRL
+                        >;
+                };
+
+                tri_layer {
+// -------------------------------   -------------------------------
+// |  #  |  !  |  "  |  &  |  (  |   |  )  | "|" |  '  |  ?  |  %  |
+// |  ~  |  ^  |  ´  |  <  |  {  |   |  }  |  >  |  `  |  =  |  €  |
+// |  *  |  +  |  -  |  /  |  [  |   |  ]  |  \  |  _  |  @  |  $  |
+//             | GUI |     | SPC |   | ENT |     | CTRL |
+                        bindings = <
+   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp C_PREV &kp C_PP &kp C_NEXT &none &none
+   &none &none &none &none &none   &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DN &none &none
+   &none &none &bt BT_CLR &none &none   &kp C_BRI_UP &kp C_BRI_DEC &none &none &none
         &kp LGUI &trans &kp SPACE   &kp RET &trans &kp LCTRL
                         >;
                 };
