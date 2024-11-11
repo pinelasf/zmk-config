@@ -72,11 +72,11 @@
                 };
 
                 tri_layer {
-// -------------------------------   -------------------------------
-// |  #  |  !  |  "  |  &  |  (  |   |  )  | "|" |  '  |  ?  |  %  |
-// |  ~  |  ^  |  ´  |  <  |  {  |   |  }  |  >  |  `  |  =  |  €  |
-// |  *  |  +  |  -  |  /  |  [  |   |  ]  |  \  |  _  |  @  |  $  |
-//             | GUI |     | SPC |   | ENT |     | CTRL |
+// -----------------------------------------    -------------------------------
+// |  BT1  |  BT2  |  BT3  |  BT4  |  BT5  |    | PREV  | PAUSE |  NEXT |     |     |
+// |       |       |       |       |       |    | MUTE  | VDOWN |  VUP  |     |     |
+// |       |       | BTCLR |       |       |    | BRDWN | BRUP  |       |     |     |
+//                 |  GUI  |       |  SPC  |    | ENT |     | CTRL |
                         bindings = <
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp C_PREV &kp C_PP &kp C_NEXT &none &none
    &none &none &none &none &none   &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &none &none
