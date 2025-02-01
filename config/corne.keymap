@@ -19,6 +19,12 @@
                 zmk,physical-layout = &foostan_corne_5col_layout;
         };
 
+        kscan: kscan {
+                compatible = "zmk,kscan-gpio-matrix";
+                diode-direction = "col2row";
+                wakeup-source;
+        };
+
         conditional_layers {
                 compatible = "zmk,conditional-layers";
                 tri_layer {
