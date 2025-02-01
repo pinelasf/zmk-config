@@ -36,14 +36,14 @@
         td_mt_f: tap_dance_mod_tap_f {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings = <&mt LSHIFT F>, <&kp CAPSLOCK>;
         };
 
         td_mt_j: tap_dance_mod_tap_j {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings = <&mt LSHIFT J>, <&kp CAPSLOCK>;
         };
         
