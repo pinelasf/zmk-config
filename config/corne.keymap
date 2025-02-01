@@ -80,12 +80,12 @@
                 tri_layer {
 // -----------------------------------------    -------------------------------------
 // |  BT1  |  BT2  |  BT3  |  BT4  |  BT5  |    | PREV  | PAUSE |  NEXT |     |     |
-// | BTDISC|       |       |       |       |    | MUTE  | VDOWN |  VUP  |     |     |
+// |BTDISC1|BTDISC2|BTDISC3|BTDISC4|BTDISC5|    | MUTE  | VDOWN |  VUP  |     |     |
 // | BTCLR |       |       |       |       |    | BRDWN | BRUP  |       |     |     |
 //                 |  GUI  |       |  SPC  |    |  ENT  |       |  CTRL |
                         bindings = <
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp C_PREV &kp C_PP &kp C_NEXT &none &none
-   &bt BT_DISC &none &none &none &none   &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &none &none
+   &bt BT_DIS 0 &bt BT_DIS 1 &bt BT_DIS 2 &bt BT_DIS 3 &bt BT_DIS 4   &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &none &none
    &bt BT_CLR &none &none &none &none   &kp C_BRI_DEC &kp C_BRI_UP &none &none &none
         &kp LGUI &trans &kp SPACE   &kp RET &trans &kp LCTRL
                         >;
